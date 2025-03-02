@@ -1,4 +1,3 @@
-javascript
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('.nav-links a ').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -8,6 +7,7 @@ document.querySelectorAll('.nav-links a ').forEach(anchor => {
         });
     });
 });
+
 document.querySelectorAll('.nav-links li').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -54,7 +54,17 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
-// Contact Form Validation
+// Fetch Data from Flask API
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('/api/data')
+        .then(response => response.json())
+        .then(data => {
+            console.log("Data from Flask:", data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
+
+// Contact Form Submission (Send data to Flask backend)
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', (e) => {
@@ -64,9 +74,25 @@ contactForm.addEventListener('submit', (e) => {
     const message = document.getElementById('message').value;
 
     if (name && email && message) {
-        alert('Message sent successfully!');
-        contactForm.reset();
+        // Send data to Flask backend
+        fetch('/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, email, message })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            contactForm.reset();
+        })
+        .catch(error => console.error('Error submitting form:', error));
     } else {
         alert('Please fill out all fields.');
     }
 });
+fetch("http://127.0.0.1:5000/send_message",{
+    method:"POST",
+    headers:{"Contednt-Type":"application/json"},body:JSON.stringify({name,email,message})
+})
