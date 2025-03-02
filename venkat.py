@@ -21,13 +21,13 @@ def send_message():
     message = data.get("message")
 
     if not name or not email or not message:
-        return "Error : ALl fields are required!"
+        return "Error : ALl fields are required"
     # Send email to yourself
     msg = Message(
         subject=f"New Contact Form Submission from {name}",
         sender=email,
         recipients=['venkat2040gr@gmail.com'],  # Your email to receive messages
-        msg.body=f"Name: {name}\nEmail: {email}\nMessage: {message}"
+        body=f"Name: {name}\nEmail: {email}\nMessage: {message}"
     )
     mail.send(msg)
 
