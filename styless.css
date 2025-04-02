@@ -1,8 +1,12 @@
 body{
+    display:flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-image: url(background.jpg);
     background-size: cover;
     position :static;
-    /* display:; */
     top: 0;
     left: 0;
     width: 100%;
@@ -102,7 +106,11 @@ nav .right a:hover {
     border-bottom: transparent;
 
 }
+.nav-links li:hover{
+    color: #ff0000 ;
+    transition: color 0.3s ease-in-out;
 
+}
 .nav-links a:hover,a:active{
     color: #ff0000 ;
     /* display:inline-block; */
