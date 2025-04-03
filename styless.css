@@ -46,7 +46,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     position :static;
     top: 0;
@@ -96,7 +96,7 @@ nav .right a:hover {
     transition: color 0.3s ease-in-out;
 }  */
 .header {
-    background-color: #cbfce1;
+    background: linear-gradient(to right,#cbfce1,#d988ee,#cbfce1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ nav .right a:hover {
     z-index: 1000;
     box-shadow: 0 2px 10px black;
     opacity: 1;
-    border-bottom: transparent;
+    /* border-bottom: transparent; */
 }
 .container {
     width: 90%;
@@ -202,7 +202,7 @@ section { padding: 40px 20px;
     border-radius: 8px;
 }
 .hero{
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     position :relative;
     width: 100%; 
@@ -242,7 +242,7 @@ section { padding: 40px 20px;
     margin: 160px;
     font-weight: normal;
     color: white;
-    background-color: rgb(31, 28, 22) ;
+    background: linear-gradient(to right, #ce33fd, #06beb6);
     padding: 6px 15px;
     box-shadow: black solid;
     border-radius: 15px;
@@ -250,8 +250,13 @@ section { padding: 40px 20px;
 .DownloadResume:hover{
     font-weight: bold;
     color: black;
-    background-color: orange;
+    background: radial-gradient(circle, #9fffd7, #0f5fa0);
     transition: font-weight 0.2s linear 0.2s,background-color 0.2s linear 0.2s,color 0.2s linear 0.2s;
+}
+#download-symbol{
+    height: 30px;
+    width: 30px;
+    margin-left: 100px;
 }
 .resume{
     display: inline-block;
@@ -276,7 +281,7 @@ section { padding: 40px 20px;
     margin: auto;
     padding: 10px 10px;
     flex-direction: flex-start;
-    background-color: #ffe4e1;
+    background: radial-gradient(circle,#ffe4e1,#acdbd9);
 }
 #about h3{
     display: flex;
@@ -409,6 +414,9 @@ section { padding: 40px 20px;
     } */
 
 /* Projects */
+#PROJECT{
+    background: radial-gradient(circle,#ce9393,#412e2e);
+}
 #project-header{
     text-align: center;
 }
@@ -443,7 +451,7 @@ section { padding: 40px 20px;
 
 .filter-buttons button:hover, 
 .filter-buttons button.active {
-    background: #f39c12;
+    background: radial-gradient(circle,#ff1b1b,#721700)
 }
 
 .project-grid {
@@ -480,12 +488,17 @@ section { padding: 40px 20px;
         flex-wrap: wrap;
     }
 }
-
-
+/* SKILLS */
+#SKILLS{
+    background: radial-gradient(circle,#9fffd7,#ffe4e1);
+}
 #SKILLS h2{
     text-align: center;
 }
-
+.skills-container p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
 .skills-container {
     display: flex;
     flex-direction: column;
@@ -519,6 +532,9 @@ section { padding: 40px 20px;
 }
 
 /*EDUCATION*/
+#EDUCATION{
+    background: radial-gradient(circle,#ffffffb4,#a7a6b367);
+}
 .timeline {
     display: flex;
     justify-content: space-between;
@@ -569,16 +585,18 @@ section { padding: 40px 20px;
 }
 .location {
     display: flex;
+    font-family: Lobster;
     justify-content: space-evenly;
+    font-weight: bold;
     align-items: center;
     font-style: italic;
-    color: rgb(218, 95, 23);
+    color: rgb(112, 72, 61);
 }
 /* </style> */
 /* Contact Section */
 #Contact {
     padding: 40px 20px;
-    background: #ffe4e1;
+    background: radial-gradient(circle,#3fd4c7,#ffffff);
     margin: 20px auto;
     width: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -594,28 +612,35 @@ section { padding: 40px 20px;
 #contact-form input,
 #contact-form textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    background: radial-gradient(circle,#d3d1d1,#ffffff);
+    border: 1px solid #f30000;
     border-radius: 5px;
     font-size: 16px;
 }
-
+#contact-form input:hover{
+    background: white
+}
+#contact-form textarea:hover{
+    background: white;
+}
 #contact-form button {
     display: flex;
     justify-content:center;
     margin-left: 33%;
-    background: #cbfce1;
+    background: linear-gradient(to left,#ce54ff,#673fd4);
     align-content: center;
     color: rgb(0, 0, 0);
     border: solid black;
     padding: 10px 20px;
     width: 30%;
+    font-weight: bold;
     border-radius: 5%;
     cursor: pointer;
 }
 
 #contact-form button:hover {
-    background: #ff4081;
-    color: black;
+    background: radial-gradient(circle,#673fd4,#ce54ff);
+    color: rgb(252, 252, 252);
     font-weight: bold;
     border-radius: 50px;
     transition: border-radius 0s linear 0s, background 0.5s linear 0s;
@@ -628,10 +653,10 @@ section { padding: 40px 20px;
 
 #links a{
     text-decoration: none;
-    color: palevioletred;
+    color: rgb(0, 0, 0);
 }
 #links a:hover{
-    background-color: orangered;
+    background: radial-gradient(circle,#ff1b1b,#721700);
     color: #ffffff;
     border-radius: 50px;
 }
