@@ -28,19 +28,20 @@
 
     <header class="header">
         <div class="container">
-            <a class="logo" href="#about">VENKAT</a>
+            <a class="logo" href="#about" style="font-family:LilitaOne;font-style: italic;">VENKAT</a>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="#about" title="About Me" id="About Me">ABOUT</a></li>
-                        <li><a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:315c3ad6-8261-4c08-80a6-9e910088f85e" title="Resume" id="Resume">RESUME</a></li>
-                        <li><a href="#SKILLS" title="SKILLS" id="Skills">SKILLS</a></li>
-                        <li><a href="#EDUCATION" title="EDUCATION" id="Education">EDUCATION</a></li>
-                        <li><a href="#PROJET" title="PROJECTS" id="Project">PROJECTS</a></li>
-                        <li><a href="#Contact" title="CONTACT" id="Contact me">CONTACT</a></li>
+                        <li><a href="#about" title="About Me" id="About Me" style="font-family:LilitaOne;font-size: large;">ABOUT</a></li>
+                        <li><a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:315c3ad6-8261-4c08-80a6-9e910088f85e" title="Resume" id="Resume" style="font-family:LilitaOne;font-size: large">RESUME</a></li>
+                        <li><a href="#SKILLS" title="SKILLS" id="Skills" style="font-family:LilitaOne;font-size: large">SKILLS</a></li>
+                        <li><a href="#EDUCATION" title="EDUCATION" id="Education" style="font-family:LilitaOne;font-size: large">EDUCATION</a></li>
+                        <li><a href="#PROJECT" title="PROJECTS" id="Project" style="font-family:LilitaOne;font-size: large">PROJECTS</a></li>
+                        <li><a href="#Contact" title="CONTACT" id="Contact me" style="font-family:LilitaOne;font-size: large">CONTACT</a></li>
                     </ul>
                 </nav>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero-content">
             <div class="headshot">
@@ -52,7 +53,7 @@
             <!-- <h1>HEY!<span>,</span><br/>I AM VENKAT<span>.</span></h1><br/><br/>
             <p>Data Engineer | Data Scientist | Tech Enthusiast</p>
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:315c3ad6-8261-4c08-80a6-9e910088f85e" class="resume" title="Resume">My Resume</a> -->
-            <h1>HEY! <span id="typed-text"></span></h1>
+            <h1 class="hey">HEY, <span id="typed-text"></span></h1>
             <p id="typed-roles">Data Engineer | Data Scientist | Tech Enthusiast</p>
             <!-- <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:315c3ad6-8261-4c08-80a6-9e910088f85e" class="resume" title="Resume">My Resume</a> --> -->
         </div>
@@ -67,19 +68,21 @@
                     My expertise lies in designing efficient data pipelines, transforming raw data into meaningful insights, and optimizing data workflows for scalable solutions. I am constantly expanding my knowledge in Cloud Computing, Workflow Orchestration, and Real-Time Data Processing, aiming to build robust and efficient data-driven systems.
                     I thrive on solving complex challenges, ensuring data integrity, and delivering optimized solutions that drive business success. My goal is to become a skilled Data Engineer, contributing to impactful projects in a consulting firm.
                     Let’s connect and build something great together!</p><br>
-                <hr>
+                    <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">Download Resume</a>
+                    <br><br>
+                <hr><br>
                     <div class="connectio-links">
-                    <ul class="info" style="font-style: italic;font-weight: bolder;">
-                        <li>PHONE NO</li>
-                        <li>Mail</li>
-                        <li>GitHub</li>
-                    </ul>
+                    <ul class="info" style="font-weight: bolder;">
+                        <li id="connect1">PHONE NO</li>
+                        <li id="connect1">Mail</li>
+                        <li id="connect1">GitHub</li>
+                    </ul><br>
                     <ul class="info">
                         <li title="My phone NO">+91 9347467672</li>
                         <li><p title="E-Mail" style="font-weight:normal;color: black;">grvenkat456@gmail.com</p></li>
-                        <li><a href="http://github.com/grvenkat40/Code-ETL" title="github account">GitHub</li>
+                        <li><a href="http://github.com/grvenkat40/Code-ETL" title="github account" style="text-decoration: none;">grvenkat40</li>
                     </ul><br><br>
-                    <br/><p class="more" style="font-weight: bolder;margin:-30px;"><a href="about.html">More about Me</p>
+                    <br/><p class="more" style="font-weight: bolder;margin:-30px;"><a href="about.html">More About Me</p>
                 </div>
             </div>
             <div class="about-image">
@@ -147,23 +150,39 @@
             </div>
         </section>
 <!-- PROJECTS -->
-<section id="PROJET">
-    <h2>Projects</h2><br>
+<!-- <section id="PROJECT"> -->
+<section id="PROJECT">
+    <h2 id="project-header">Project Showcase</h2><br>
     <hr><br>
-    <div class="project-card">
-        <h3>Named Entity Recognition (NER) Project</h3>
-        <p>Developed an NLP model using spaCy to extract named entities from text data.</p>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="data-science">Data Science</button>
+        <button class="filter-btn" data-category="web-development">Web Development</button>
+        <button class="filter-btn" data-category="finance">Finance</button>
     </div>
-    <div class="project-card">
-        <h3>Data Transformation Pipeline</h3>
-        <p>Built a data pipeline to process and transform large datasets efficiently.</p>
+    <div class="project-container">
+        <div class="project-card" data-category="data-science">
+            <h3>AI-Powered Data Analysis</h3>
+            <p>Analyzing large datasets using AI and machine learning.</p>
+        </div>
+        <div class="project-card" data-category="web-development">
+            <h3>Portfolio Website</h3>
+            <p>A dynamic and interactive personal portfolio.</p>
+        </div>
+        <div class="project-card" data-category="finance">
+            <h3>SmartFin: Personal Finance App</h3>
+            <p>Helping users manage their finances effectively.</p>
+        </div>
     </div>
 </section>
+
+
+
 <!-- Contact -->
 <section id="Contact">
         <h2 style="text-align: center;">Contact Me</h2><br/>
         <hr><br>
-        <form id="contact-form" action="http://127.0.0.1:5000/send-message" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xqapylpa" method="POST">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <label for="email">Your email</label>
@@ -172,6 +191,7 @@
             <textarea id="message" message="message" placeholder="Your Message" required></textarea>
             <button type="submit" id="button">Send Message</button>
         </form><br><br>
+        <p id="response-msg"></p>
     <ul id="links">
         <li><p>Email:<p></p><br><p> grvenkat456@gmail.com</p></li>
         <li><p>LinkedIn:</p><br><br><p> <a href="https://www.linkedin.com/in/venkatgr/">Click Here</a></p></li>
@@ -189,18 +209,17 @@
     </div>
 </footer> -->
 
-<button id="back-to-top" title="Go to top">↑</button>
+<button id="back-to-top" title="Go to top">GO</button>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
       var typedText = new Typed("#typed-text", {
-        strings: ["I AM VENKAT"],
+        strings: ["I AM VENKAT !","Welome to my Portfolio !"],
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 1000,
         loop: true
-      });
-  
+    });
     //   var typedLink = new Typed("#typed-roles", {
     //     strings: ["Data Engineer | Data Scientist | Tech Enthusiast"],
     //     typeSpeed: 1000,
