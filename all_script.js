@@ -120,6 +120,29 @@ document.addEventListener('DOMContentLoaded', () => {
 //     method:"POST",
 //     headers:{"Contednt-Type":"application/json"},body:JSON.stringify({name,email,message})
 // })
+// {/* <script> */}
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? "block" : "none";
+        });
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+        showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+// </script>
+
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     

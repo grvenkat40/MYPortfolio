@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styless.css">
-    <script src="all_script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <title>Venkat | Portfolio</title>
 </head>
 <body>
@@ -67,7 +66,7 @@
                     My expertise lies in designing efficient data pipelines, transforming raw data into meaningful insights, and optimizing data workflows for scalable solutions. I am constantly expanding my knowledge in Cloud Computing, Workflow Orchestration, and Real-Time Data Processing, aiming to build robust and efficient data-driven systems.
                     I thrive on solving complex challenges, ensuring data integrity, and delivering optimized solutions that drive business success. My goal is to become a skilled Data Engineer, contributing to impactful projects in a consulting firm.
                     Let’s connect and build something great together!</p><br>
-                    <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">Download Resume</a>
+                    <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">My Resume</a>
                     <br><br>
                 <hr><br>
                     <div class="connectio-links">
@@ -82,6 +81,7 @@
                         <li><a href="http://github.com/grvenkat40/Code-ETL" title="github account" style="text-decoration: none;">grvenkat40</li>
                     </ul><br><br>
                     <br/><p class="more" style="font-weight: bolder;margin:-30px;"><a href="about.html">More About Me</p>
+                    <br>
                 </div>
             </div>
             <div class="about-image">
@@ -96,7 +96,7 @@
         </section>
 <!-- SKILLS -->
         <section id="SKILLS">
-            <h2>SKILLS</h2><br>
+            <h2 style="color: black;">SKILLS</h2><br>
             <hr><br>
             <div class="skills-container">
                 <div class="skill">
@@ -153,7 +153,7 @@
 <section id="PROJECT">
     <h2 id="project-header">Project Showcase</h2><br>
     <hr><br>
-    <div class="filter-buttons">
+        <!--<div class="filter-buttons">
         <button class="filter-btn active" data-category="all">All</button>
         <button class="filter-btn" data-category="data-science">Data Science</button>
         <button class="filter-btn" data-category="web-development">Web Development</button>
@@ -172,14 +172,67 @@
             <h3>SmartFin: Personal Finance App</h3>
             <p>Helping users manage their finances effectively.</p>
         </div>
-    </div>
+    </div> -->
+    <!-- <section class="Project-Slider"> -->
+        <div class="slider-container">
+            <div class="arrow left-arrow" onclick="prevSlide()">&#8592;</div>
+        
+            <div class="slide">
+                <img src="images/ai-retail-analysis.png" alt="Image 1">
+                <h3 class="quote">AI_Retail_analysis</h3>
+                <p class="quote">"It explores the impact and adoption of AI technologies in the retail industry, with a focus on customer demographics, preferences, payment methods, and AI-enabled tools</p>
+                <p class="project-links"><a href="https://github.com/grvenkat40/AI_Retail_analysis"  style="color:maroon;text-shadow: 0px 3px 10px rgb(248, 29, 29);text-decoration: none;font-family: Lobster;">See-></a></p>
+            </div>
+            <div class="slide">
+                <img src="images/portfolio-photo.png" alt="Image 2">
+                <h3 class="quote">Portfolio Website</h3>
+                <p class="quote">"A dynamic and interactive personal portfolio</p>
+                <p class="project-links"><a href="https://github.com/grvenkat40/MYPortfolio" style="color:maroon;text-shadow: 0px 3px 10px rgb(248, 29, 29);text-decoration: none;font-family: Lobster;">See-></a></p>
+            </div>
+            <div class="slide">
+                <img src="images/background.jpg" alt="Image 3">
+                <h3 class="quote">SmartFin: Personal Finance App</h3>
+                <p class="project-links">Helping users manage their finances effectively</p>
+                <p ><a href="" style="color:maroon;text-shadow: 0px 3px 10px rgb(248, 29, 29);text-decoration: none;font-family: Lobster;">See-></a></p>
+            </div>
+        
+            <div class="arrow right-arrow" onclick="nextSlide()">&#8594;</div>
+        </div>
 </section>
+
+<!-- project -->
+<!-- <section class="Project-Slider">
+<div class="slider-container">
+    <div class="arrow left-arrow" onclick="prevSlide()">&#8592;</div>
+
+    <div class="slide">
+        <img src="images/headshot.png" alt="Image 1">
+        <h3 class="quote">AI_Retail_analysis</h3>
+        <p class="quote">"It explores the impact and adoption of AI technologies in the retail industry, with a focus on customer demographics, preferences, payment methods, and AI-enabled tools</p>
+        <p class="project-links"><a href="https://github.com/grvenkat40/AI_Retail_analysis">See-></a></p>
+    </div>
+    <div class="slide">
+        <img src="images/venkat-photo.jpg" alt="Image 2">
+        <h3 class="quote">Portfolio Website</h3>
+        <p class="quote">"A dynamic and interactive personal portfolio</p>
+        <p class="project-links"><a href="https://github.com/grvenkat40/MYPortfolio">See-></a></p>
+    </div>
+    <div class="slide">
+        <img src="images/background.jpg" alt="Image 3">
+        <h3 class="quote">SmartFin: Personal Finance App</h3>
+        <p class="project-links">Helping users manage their finances effectively</p>
+        <p ><a href="">See-></a></p>
+    </div>
+
+    <div class="arrow right-arrow" onclick="nextSlide()">&#8594;</div>
+</div>
+</section> -->
 
 
 
 <!-- Contact -->
 <section id="Contact">
-        <h2 style="text-align: center;">Contact Me</h2><br/>
+        <h2 style="text-align: center;color: black;;">Contact Me</h2><br/>
         <hr><br>
         <form id="contact-form" action="https://formspree.io/f/xqapylpa" method="POST">
             <label for="name">Your Name</label>
@@ -228,7 +281,10 @@
     //   });
     });
   </script>
-  
+<script src="all_script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
 
 </body>
 </html>
