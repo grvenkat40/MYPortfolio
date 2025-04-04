@@ -239,10 +239,10 @@ section { padding: 40px 20px;
 .DownloadResume{
     font-family: 'Lobster';
     text-decoration: none;
-    margin: 160px;
+    /* margin: 160px; */
     font-weight: normal;
     color: white;
-    background: linear-gradient(to right, #ce33fd, #06beb6);
+    background: radial-gradient(circle, #37d8f5, #36f510);
     padding: 6px 15px;
     box-shadow: black solid;
     border-radius: 15px;
@@ -250,7 +250,7 @@ section { padding: 40px 20px;
 .DownloadResume:hover{
     font-weight: bold;
     color: black;
-    background: radial-gradient(circle, #9fffd7, #0f5fa0);
+    background: radial-gradient(circle, #36f510, #37d8f5);
     transition: font-weight 0.2s linear 0.2s,background-color 0.2s linear 0.2s,color 0.2s linear 0.2s;
 }
 #download-symbol{

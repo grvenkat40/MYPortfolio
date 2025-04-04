@@ -39,7 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
+document.querySelector('.DownloadResume').addEventListener('click',function(event){
+    event.stopPropagation();
+    const link=document.createElement('a');
+    link.href="Venkat_EngineeringResumes_5.pdf";
+    link.download="Venkat_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
 
 // Fade-In Animations on Scroll
 const sections = document.querySelectorAll('section');
