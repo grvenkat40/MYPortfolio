@@ -573,14 +573,19 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     padding: 10px;
     gap: 60px;
-    background-color: rgb(255, 0, 0);
+    background: radial-gradient(circle,#5c4646,#2cdef5);
     border-radius: 50%;
     user-select: none;
-        transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
+    opacity: 0.8;
+}
+.arrow:hover{
+    color: black;
+    background: radial-gradient(circle,#c90606,#e7f52c);
 }
 .left-arrow {
     left: -50px;
@@ -682,6 +687,12 @@ body {
 #contact-form textarea:hover{
     background: white;
 }
+#contact-form label{
+    color: black;
+    font-family: LilitaOne;
+    text-align: left;
+
+}
 #contact-form button {
     display: flex;
     justify-content:center;
@@ -710,6 +721,11 @@ body {
     justify-content: space-evenly;
 }
 
+#links p{
+    font-family: LilitaOne;
+    color: black;
+
+}
 #links a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -745,8 +761,8 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #ff4081;
-    color: white;
+    background: radial-gradient(circle,#efff10,#00a9d3,#2659ff);
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 15px;
     border-radius: 50%;
@@ -755,6 +771,6 @@ footer {
 }
 
 #back-to-top:hover {
-    background: #87ffa5;
-    color: black;
+    background: linear-gradient(to right,#ff0000,#10ff08,#ff9900);
+    color: rgb(255, 255, 255);
 }
