@@ -49,10 +49,10 @@ li{
         justify-content: flex-start;
     }
 
-    .container, section, #Contact {
+    /* .container, section, #Contact {
         width: 95%;
         flex-direction: column;
-    }
+    } */
 
     /* .nav-links {
         flex-direction: column;
@@ -110,7 +110,7 @@ li{
         width: 100%;
     }
 
-    #Contact {
+    /* #Contact {
         width: 90%;
     }
 
@@ -135,7 +135,7 @@ li{
         width: 10rem;
         height: 10rem;
     }
-}
+} */
 
 
 
