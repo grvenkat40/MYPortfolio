@@ -62,7 +62,7 @@ li{
     .nav-links li {
         margin: 10px 0;
     } */
-
+/* 
     .hero-content h1 {
         font-size: 1.5rem;
         text-align: center;
@@ -71,9 +71,9 @@ li{
     .hero-content p {
         font-size: 1rem;
         text-align: center;
-    }
+    } */
 
-    .DownloadResume {
+    /* .DownloadResume {
         padding: 10px 20px;
         font-size: 1rem;
     }
@@ -92,7 +92,7 @@ li{
         margin-left: 0;
         width: 80%;
         height: auto;
-    }
+    } */
 
     .projects-container {
         flex-direction: column;
