@@ -32,7 +32,7 @@
                     <ul class="nav-links">
                         <li><a href="#about" title="About Me" id="About Me" style="font-family:LilitaOne;font-size: large;">ABOUT</a></li>
                         <li><a href="Venkat_Engineer_resume.pdf" download="Venkat_Resume" class="DownloadResume">RESUME</a></li>
-                        <li><a href="#SKILLS" title="SKILLS" id="Skills" style="font-family:LilitaOne;font-size: large">SKILLS</a></li>
+                        <li><a href="#skills" title="SKILLS" id="Skills" style="font-family:LilitaOne;font-size: large">SKILLS</a></li>
                         <li><a href="#EDUCATION" title="EDUCATION" id="Education" style="font-family:LilitaOne;font-size: large">EDUCATION</a></li>
                         <li><a href="#PROJECT" title="PROJECTS" id="Project" style="font-family:LilitaOne;font-size: large">PROJECTS</a></li>
                         <li><a href="#Contact" title="CONTACT" id="Contact me" style="font-family:LilitaOne;font-size: large">CONTACT</a></li>
@@ -63,7 +63,7 @@
             <div class="about-text">
                 <h3>About Me</h3><br>
                 <hr><br>
-                <p class="short" style="font-weight:lighter; color: black;"> Hii! I'm GOONDAM RAMALINGAM VENKAT passionate Data Engineering & Data Science enthusiast currently pursuing my B.Tech in Computer Science and Information Technology. </p></br></br></br>
+                <p class="short" style="font-weight:lighter;color: #cbfce1;"> Hii! I'm GOONDAM RAMALINGAM VENKAT passionate Data Engineering & Data Science enthusiast currently pursuing my B.Tech in Computer Science and Information Technology. </p></br></br></br>
                 <p>I have a strong foundation in Python, SQL, Data Transformation, and Big Data technologies, with hands-on experience in data analytics and cloud platforms.
                     My expertise lies in designing efficient data pipelines, transforming raw data into meaningful insights, and optimizing data workflows for scalable solutions. I am constantly expanding my knowledge in Cloud Computing, Workflow Orchestration, and Real-Time Data Processing, aiming to build robust and efficient data-driven systems.
                     I thrive on solving complex challenges, ensuring data integrity, and delivering optimized solutions that drive business success. My goal is to become a skilled Data Engineer, contributing to impactful projects in a consulting firm.
@@ -97,7 +97,7 @@
             </div>
         </section>
 <!-- SKILLS -->
-        <section id="SKILLS">
+        <!-- <section id="SKILLS">
             <h2 style="color: black;">SKILLS</h2><br>
             <hr><br>
             <div class="skills-container">
@@ -127,7 +127,45 @@
                 </div>
 
             </div>
+        </section> -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-category"><br>
+            <h3>Programming Languages</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🐍</span> Python</div>
+                <div class="skill-card"><span class="skill-icon">🧠</span> SQL</div>
+                <div class="skill-card"><span class="skill-icon">📘</span> R(Basics)</div>
+                <div class="skill-card"><span class="skill-icon">☕</span> Java(Basics)</div>
+            </div><br>
+            <h3>Databases</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🐬</span> MySQL</div>
+                <div class="skill-card"><span class="skill-icon"> 🐘</span> PostgreSQL</div>
+            </div>
+            </div>
+        
+            <div class="skills-category">
+            <h3>Data Tools & Libraries</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">📉</span> Power BI</div>
+                <div class="skill-card"><span class="skill-icon">📊</span> Pandas</div>
+                <div class="skill-card"><span class="skill-icon">🔢</span> NumPy</div>
+                <div class="skill-card"><span class="skill-icon">📉</span> Matplotlib</div>
+            </div>
+            </div>
+        
+            <div class="skills-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🔧</span> Git</div>
+                <div class="skill-card"><span class="skill-icon">🖥️</span> VS Code</div>
+                <div class="skill-card"><span class="skill-icon">🐧</span> Linux</div>
+            </div>
+            </div>
         </section>
+        
 <!-- EDUCATION -->
         <section id="EDUCATION">
             <h2 style="text-align: center;">EDUCATION</h2><br>
@@ -289,7 +327,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
       var typedText = new Typed("#typed-text", {
-        strings: ["I AM VENKAT 👋","Welome to my Portfolio 👋"],
+        strings: ["I AM VENKAT 👋","Welome to my Portfolio!"],
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 1000,
