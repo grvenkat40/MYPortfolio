@@ -849,7 +849,6 @@ section { padding: 40px 20px;
     border-radius: 50px;
     transition: border-radius 0s linear 0s, background 0.5s linear 0s;
 }
-
 /* Footer */
 footer {
     background: linear-gradient(to right,#cbfce1,#d988ee,#cbfce1);
