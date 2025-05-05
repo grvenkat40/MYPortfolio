@@ -849,26 +849,7 @@ section { padding: 40px 20px;
     border-radius: 50px;
     transition: border-radius 0s linear 0s, background 0.5s linear 0s;
 }
-#links{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-#links p{
-    font-family: LilitaOne;
-    color: #fbff10;
-
-}
-#links a{
-    text-decoration: none;
-    color: #38bdf8;
-}
-#links a:hover{
-    background: radial-gradient(circle,#ff1b1b,#721700);
-    color: #ffffff;
-    border-radius: 50px;
-}
 /* Footer */
 footer {
     background: linear-gradient(to right,#cbfce1,#d988ee,#cbfce1);
