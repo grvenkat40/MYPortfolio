@@ -401,19 +401,20 @@ section { padding: 40px 20px;
     font-weight: bold;
     font-family: 'Lobster';
     padding: 8px 10px;
-    background: #ff4081;
-    color: rgb(0, 0, 0);
+    background: linear-gradient(#ffdea4,#ffb027);
+    color: black;
     text-decoration: none;
     border-radius: 15px;
     margin-top: 10px;
     align-items: center;
     position: static;
+    transition: transform 0.2s ease-in-out;
 }
 .resume:hover{
-    background: #87ffa5;
-    color: solid rgb(8, 239, 255);
-    box-shadow: 0 2px 5px #87ffa5;
-    transition: transform 0.2s ease;
+    background: radical-gradient(circle,#ffac1c,#ffe4b5);
+    color:#343f3c;
+    box-shadow: 1 2px 5px #87ffa5;
+    transform: scale(1.05);
 }
 #about{
     display: flex;
@@ -465,6 +466,7 @@ section { padding: 40px 20px;
     width: 100%;
     height: 100%;
     border-radius: 50px;
+    border: 2px solid #fbff10;
     object-fit: cover;
     margin-left: 25%;
     box-shadow: 0 5px 10px #412e2e;
@@ -490,6 +492,10 @@ section { padding: 40px 20px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    transition:transform 0.2 ease-out;
+}
+.info li:hover{
+    transform: scale(1.04);
 }
 #connect1{
     color: darkcyan;
@@ -501,6 +507,7 @@ section { padding: 40px 20px;
 }
 .more a:hover{
     transition: ease-in-out;
+    transform: scale(1.04);
     color: rgb(133, 228, 228);
 }
 #connect1{
@@ -696,7 +703,7 @@ section { padding: 40px 20px;
 }
 
 .project-links a:hover {
-    background-color: #ff55d4;
+    background-color: #fbff10;
     color: #000;
 }
 
@@ -709,8 +716,11 @@ section { padding: 40px 20px;
     border-left: 2px solid #38bdf8;
     border-top: 2px solid rgb(255, 230, 7);
     border-bottom: 2px solid rgb(255, 230, 7);
+    transition: transform 0.3s ease-in;
 }
-
+.education-timeline .timeline-item:hover{
+    transform: scale(1.03);
+}
 .section-title {
     text-align: center;
     font-size: 2rem;
@@ -756,7 +766,7 @@ section { padding: 40px 20px;
 
 .timeline-content {
     padding: 10px 20px;
-    background: white;
+    background: whitesmoke;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     margin-left: 50px;
@@ -779,7 +789,12 @@ section { padding: 40px 20px;
 /* Contact Section */
 #Contact {
     padding: 40px 20px;
-    background: radial-gradient(circle,#3fd4c7,#ffffff);
+    /* background: radial-gradient(circle,#3fd4c7,#ffffff); */
+    background: #1e293b;
+    border-right: 2px solid #38bdf8;
+    border-left: 2px solid #38bdf8;
+    border-top: 2px solid rgb(255, 230, 7);
+    border-bottom: 2px solid rgb(255, 230, 7);
     margin: 20px auto;
     width: 50%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -807,7 +822,7 @@ section { padding: 40px 20px;
     background: white;
 }
 #contact-form label{
-    color: black;
+    color: #fbff10;
     font-family: LilitaOne;
     text-align: left;
 
@@ -842,12 +857,12 @@ section { padding: 40px 20px;
 
 #links p{
     font-family: LilitaOne;
-    color: black;
+    color: #fbff10;
 
 }
 #links a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #38bdf8;
 }
 #links a:hover{
     background: radial-gradient(circle,#ff1b1b,#721700);
