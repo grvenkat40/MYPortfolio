@@ -564,7 +564,7 @@ section { padding: 40px 20px;
     display: flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 2px 5px rgba(145, 145, 145, 0.2);
+    box-shadow: 0 2px 5px #00C9FF;
     transition: transform 0.2s ease;
     }
 
@@ -615,7 +615,7 @@ section { padding: 40px 20px;
     margin: 20px auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px #00C9FF;
     border-top: 2px solid #fbff10;
     border-left: 3px solid #fbff10;
     border-bottom: 2px solid #fbff10;
@@ -748,6 +748,7 @@ section { padding: 40px 20px;
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
+
 }
 
 .timeline-icon {
@@ -761,14 +762,14 @@ section { padding: 40px 20px;
     border-radius: 50%;
     text-align: center;
     line-height: 32px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(229, 255, 0, 0.986);
 }
 
 .timeline-content {
     padding: 10px 20px;
     background: whitesmoke;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(126, 255, 5, 0.1);
     margin-left: 50px;
 }
 
@@ -887,9 +888,11 @@ footer {
     color: #14004d;
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.3s ease-in;
 }
 .footer-links a:hover {
     color: #ff0800;
+    transform: scale(1.04);
 }
 .social-icons img {
     width: 28px;
