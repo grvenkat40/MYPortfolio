@@ -283,10 +283,20 @@
         <button type="submit" id="button">Send Message</button>
     </form><br><br>
 
-    <p id="response_msg">{{response_msg}}</p>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p class="alert">{{ message }}</p>
+        <script>alert("{{ message }}");</script>
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+
 </section>
 
 <br>
+
 
 
 <footer>

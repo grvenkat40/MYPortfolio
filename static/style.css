@@ -708,7 +708,7 @@ section { padding: 40px 20px;
 }
 
 /*EDUCATION*/
-#education-timeline {
+.education-timeline {
     width: 100%;
     padding: 50px 20px;
     background: #1e293b;
@@ -718,7 +718,7 @@ section { padding: 40px 20px;
     border-bottom: 2px solid rgb(255, 230, 7);
     transition: transform 0.3s ease-in;
 }
-#education-timeline #timeline-item:hover{
+.education-timeline .timeline-item:hover{
     transform: scale(1.03);
 }
 .section-title {
@@ -850,11 +850,13 @@ section { padding: 40px 20px;
     transition: border-radius 0s linear 0s, background 0.5s linear 0s;
 }
 #Contact #response_msg{
-    color: green;
+    color: #fbff10;
     font-family: 'Lobster';
     margin-top: 10px;
     font-weight: bolder;
     font-size: 16px;
+    text-align: center;
+    text-shadow:0px 3px 10px #0cffeb;
 }
 /* Footer */
 footer {
@@ -930,6 +932,7 @@ footer {
     }
 }
 /* Back to Top Button */
+
 #back-to-top {
     display: none;
     position: fixed;

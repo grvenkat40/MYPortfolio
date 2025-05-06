@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask, render_template, request, redirect, url_for, flash
 import mysql.connector
 
 
@@ -38,6 +38,8 @@ import mysql.connector
 
 
 app=Flask(__name__)
+app.secret_key = 'aS3cr3t!Key#789@dev'  # Good enough for local testing
+
 
 db=mysql.connector.connect(
     host="localhost",
@@ -57,24 +59,29 @@ def about():
 
 
 
-@app.route('/', methods=['POST'])
-def form():
-    name = request.form.get('name')
-    email = request.form.get('email')
-    message = request.form.get('message')
+@app.route('/', methods=['GET', 'POST'])
 
-    print(f"Name: {name}, Email: {email}, Message: {message}")
+def form():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+
+        print(f"Name: {name}, Email: {email}, Message: {message}")
     
     # Ensure cursor is correctly created
-    cursor = db.cursor()
+        cursor = db.cursor()
     
     # Corrected SQL insert query
-    query = "INSERT INTO venkat.portfolio_db(Name, Email, Message) VALUES (%s, %s, %s)"
-    cursor.execute(query, (name, email, message))  # Pass correct data (name, email, message)
+        query = "INSERT INTO venkat.portfolio_db(Name, Email, Message) VALUES (%s, %s, %s)"
+        cursor.execute(query, (name, email, message))  # Pass correct data (name, email, message)
     
-    db.commit()
+        db.commit()
+        
+        flash("Message sent Successfully 👋")
+        return redirect(url_for('form'))  # Avoid duplicate form submissions
     
-    return render_template('index.html', response_msg="Message sent Successfully 👋")
+    return render_template('index.html')
 
     
     
