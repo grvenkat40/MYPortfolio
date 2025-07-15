@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='images/venkat_title.png') }}">
+    <title>Venkat | Portfolio</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#about" style="font-family:LilitaOne;font-style: italic;">VENKAT</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about" title="About Me" id="About Me" style="font-family:LilitaOne;font-size: large;">ABOUT</a></li>
+                        <li><a href="#skills" title="SKILLS" id="Skills" style="font-family:LilitaOne;font-size: large">SKILLS</a></li>
+                        <li><a href="#education-timeline" title="EDUCATION" id="Education" style="font-family:LilitaOne;font-size: large">EDUCATION</a></li>
+                        <li><a href="#projects" title="PROJECTS" id="Project" style="font-family:LilitaOne;font-size: large">PROJECTS</a></li>
+                        <li><a href="#Contact" title="CONTACT" id="Contact me" style="font-family:LilitaOne;font-size: large">CONTACT</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="headshot">
+                <picture>
+                    <!-- <source srcset="images/webp/headshot.webp" type="image/webp"> -->
+                    <img src="{{ url_for('static',filename='images/headshot.png') }}" alt="headshot" class="hero-img">
+                </picture>
+            </div>
+            <h1 class="hey">HEY, <span id="typed-text"></span></h1>
+            <!-- <p id="typed-roles">Data Engineer | Data Scientist | Tech Enthusiast</p> -->
+            <h3 style="font-family: Lobster;">Aspiring Data Engineer | Tech Enthusiast</h3>
+            <p>I love transforming data into meaningful solutions.</p><br>
+            <div class="footer-right">
+                <div class="social-icons">
+                <a href="http://github.com/grvenkat40" target="_blank"><img src="{{ url_for('static',filename='images/github.png') }}" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/venkatgr" target="_blank"><img src="{{ url_for('static',filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/venkat_40_smart?igsh=MXNiNXdqcjlkZnloag==" target="_blank"><img src="{{ url_for('static',filename='images/instagram.png') }}" alt="Twitter"></a>
+                <a href="mailto:venkat2040gr@gmail.com"><img src="{{ url_for('static',filename='images/gmail.png') }}" alt="Gmail"></a>
+                </div>
+            </div>
+            <a href="{{ url_for('static',filename='assert/Venkat_resume_recent2.docx') }}" download="Venkat_CV.pdf" class="resume" title="Resume">📥My Resume</a>
+        </div>
+    </section>
+        <section id="about">
+            <div class="about-text">
+                <h3>About Me</h3><br>
+                <hr><br>
+                <p class="short" style="font-weight:lighter;color: #cbfce1;"> Hii! I'm GOONDAM RAMALINGAM VENKAT passionate Data Engineering & Data Science enthusiast currently pursuing my B.Tech in Computer Science and Information Technology. </p></br></br></br>
+                <p>I have a strong foundation in Python, SQL, Data Transformation, and Big Data technologies, with hands-on experience in data analytics and cloud platforms.
+                    My expertise lies in designing efficient data pipelines, transforming raw data into meaningful insights, and optimizing data workflows for scalable solutions. I am constantly expanding my knowledge in Cloud Computing, Workflow Orchestration, and Real-Time Data Processing, aiming to build robust and efficient data-driven systems.
+                    I thrive on solving complex challenges, ensuring data integrity, and delivering optimized solutions that drive business success. My goal is to become a skilled Data Engineer, contributing to impactful projects in a consulting firm.
+                    Let’s connect and build great things together!</p><br>
+                    <!-- <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">My Resume</a> -->
+                    <br><br>
+                <hr><br>
+                    <div class="connectio-links">
+                    <ul class="info" style="font-weight: bolder;">
+                        <li id="connect1">PHONE NO</li>
+                        <li id="connect1">Mail</li>
+                        <li id="connect1">GitHub</li>
+                    </ul><br>
+                    <ul class="info">
+                        <li title="My phone NO" style="color: rgb(255, 255, 255);">+91 9347467672</li>
+                        <li><p title="E-Mail" style="font-weight:normal;color: rgb(255, 255, 255);">grvenkat456@gmail.com</p></li>
+                        <li><a href="http://github.com/grvenkat40/Code-ETL" title="github account" style="text-decoration: none;color:rgb(255, 255, 255);">grvenkat40</li>
+                    </ul><br><br>
+                    <br/><p class="more" style="font-weight: bolder;margin:-30px;color:rgb(255, 255, 255); "><a href="{{ url_for('about') }}">More About Me</p>
+                    <br>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static',filename='images/venkat-photo.jpg') }}",alt="Venkat">
+                <div class="socials">
+                    <p title="Venkat LinkedIn ID" style="margin-left: 100px;"><a href="https://www.linkedin.com/in/venkatgr/",id='linkedin'>
+                        <img src="{{ url_for('static',filename='images/linkedin.png') }}" alt="LinkedIn" style="width:25px;height:25px; width: auto;",id='linkedin'>
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+<!-- SKILLS -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-category"><br>
+            <h3>Programming Languages</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🐍</span> Python</div>
+                <div class="skill-card"><span class="skill-icon">🧠</span> SQL</div>
+                <div class="skill-card"><span class="skill-icon">📘</span> R(Basics)</div>
+                <div class="skill-card"><span class="skill-icon">☕</span> Java(Basics)</div>
+            </div><br>
+            <h3>Databases</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🐬</span> MySQL</div>
+                <div class="skill-card"><span class="skill-icon"> 🐘</span> PostgreSQL</div>
+            </div>
+            </div>
+        
+            <div class="skills-category">
+            <h3>Data Tools & Libraries</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">📉</span> Power BI</div>
+                <div class="skill-card"><span class="skill-icon">📊</span> Pandas</div>
+                <div class="skill-card"><span class="skill-icon">🔢</span> NumPy</div>
+                <div class="skill-card"><span class="skill-icon">📉</span> Matplotlib</div>
+            </div>
+            </div>
+        
+            <div class="skills-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><span class="skill-icon">🔧</span> Git</div>
+                <div class="skill-card"><span class="skill-icon">🖥️</span> VS Code</div>
+                <div class="skill-card"><span class="skill-icon">🐧</span> Linux</div>
+            </div>
+            </div>
+        </section>
+        
+<!-- EDUCATION -->
+        <!-- <section id="EDUCATION">
+            <h2 style="text-align: center;">EDUCATION</h2><br>
+            <hr><br>
+            <div class="timeline">
+                <div class="event">
+                    <div class="date">2014 - 2020</div>
+                    <div class="title">Secondary School Certificate(SCC)</div>
+                    <div class="location">Z P High School,AP</div>
+                </div>
+                <div class="event">
+                    <div class="date">2020 - 2022</div>
+                    <div class="title">Intermediate-MPC</div>
+                    <div class="location">Sri Sai Jyothi Junior College,Ap</div>
+                </div>
+                <div class="event">
+                    <div class="date">2022 - 2026</div>
+                    <div class="title">Bachelor of Computer Science and Information Technology </div>
+                    <div class="location">Siddharth Institute of Engineering and Technology/div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="education-timeline" id="education-timeline">
+            <h2 class="section-title">🎓 Education</h2><hr><br>
+            <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">🎓</div>
+                <div class="timeline-content">
+                <h3>B.Tech in Computer Science and Information Technology</h3>
+                <p id="clg">Siddharth Institute of Engineering and Technology, 2022 – 2026</p>
+                <p id="cgpa">CGPA: 8.93 (Upto 5th sem)</p>
+                </div>
+            </div>
+        
+            <div class="timeline-item">
+                <div class="timeline-icon">🏫</div>
+                <div class="timeline-content">
+                <h3>Intermediate (MPC)</h3>
+                <p id="clg">Sri Sai Jyothi Jr. College, 2020 – 2022</p>
+                <p id="cgpa">Percentage: 77.8%</p>
+                </div>
+            </div>
+        
+            <div class="timeline-item">
+                <div class="timeline-icon">📘</div>
+                <div class="timeline-content">
+                <h3>10th Class (SSC)</h3>
+                <p id="clg">Z P High School, 2016 – 2020</p>
+                <p id="cgpa">Percentage: 98%</p>
+                </div>
+            </div>
+        
+            </div>
+        </section>
+        
+        
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2 style="text-align: center;">PROJECTS</h2><br>
+    <hr><br/>
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static',filename='images/portfolio-photo.png') }}" alt="Venkat Portfolio" class="project-image">
+            <div class="project-overlay">
+                <h3>Personal Portfolio</h3>
+                <p>A dynamic and interactive personal portfolio.</p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://grvenkat40.github.io/MYPortfolio/">🔗 Live Demo</a>
+                    <a href="https://github.com/grvenkat40/MYPortfolio">💻 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="{{ url_for('static',filename='images/ai-retail-analysis.png') }}" alt="AI Retail Analysis" class="project-image">
+            <div class="project-overlay">
+                <h3>AI_Retail_analysis</h3>
+                <p>It explores the impact and adoption of AI technologies in the retail industry, with a focus on customer demographics, preferences, payment methods, and AI-enabled tools.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Pandas</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/grvenkat40/AI_Retail_analysis">💻 GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <!-- <div class="project-card">
+            <img src="images/background.jpg" alt="DataPulse Screenshot" class="project-image">
+            <div class="project-overlay">
+                <h3>DataPulse: Health Analytics</h3>
+                <p>A dashboard to track and visualize health trends using Pandas and Plotly — built for fitness lovers and researchers.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Plotly</span>
+                    <span>HTML</span>
+                </div>
+                <div class="project-links">
+                    <a href="#">🔗 Live Demo</a>
+                    <a href="#">💻 GitHub</a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Project 4 -->
+        <!-- <div class="project-card">
+            <img src="images/venkat-headshot.jpg" alt="BookHive Screenshot" class="project-image">
+            <div class="project-overlay">
+                <h3>BookHive: Digital Library Manager</h3>
+                <p>Organize, track, and review your book collection using this web-based digital library management app.</p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>JSON</span>
+                </div>
+                <div class="project-links">
+                    <a href="#">🔗 Live Demo</a>
+                    <a href="#">💻 GitHub</a>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+</section>
+
+
+</section>
+
+
+<section id="Contact">
+    <h2 style="text-align: center;color: #38bdf8;;">Connect Me</h2><br/>
+    <hr><br>
+    <form id="contact-form" action="/" method="POST">
+        <label for="name">Your Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        
+        <button type="submit" id="button">Send Message</button>
+    </form><br><br>
+
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p class="alert">{{ message }}</p>
+        <script>alert("{{ message }}");</script>
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+</section>
+
+<br>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Goondam Ramalingam Venkat</h3>
+            <p>Data Science & Engineering Enthusiast</p>
+        </div>
+        <div class="footer-center">
+            <ul class="footer-links">
+            <li><a href="#about"">About Me</a></li>
+            <li><a href="#skills"">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education-timeline">Education</a></li>
+            <li><a href="#Contact"">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="social-icons">
+            <a href="http://github.com/grvenkat40" target="_blank"><img src="{{ url_for('static',filename='images/github.png') }}" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/venkatgr" target="_blank"><img src="{{ url_for('static',filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/venkat_40_smart?igsh=MXNiNXdqcjlkZnloag==" target="_blank"><img src="{{ url_for('static',filename='images/instagram.png') }}" alt="Twitter"></a>
+            <a href="mailto:venkat2040gr@gmail.com"><img src="{{ url_for('static',filename='images/gmail.png') }}" alt="Gmail"></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; 2025 Goondam Ramalingam Venkat. All rights reserved.</p>
+        </div>
+</footer>
+
+<button id="back-to-top" title="Go to top">Top</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var typedText = new Typed("#typed-text", {
+        strings: ["I am Venkat👋","Welome to my Portfolio!"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true
+    });
+    //   var typedLink = new Typed("#typed-roles", {
+    //     strings: ["Data Engineer | Data Scientist | Tech Enthusiast"],
+    //     typeSpeed: 1000,
+    //     backSpeed: 50,
+    //     backDelay: 2000,
+    //     loop: true
+    //   });
+    });
+</script>
+<script src="{{ url_for('static',filename='javascript.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+</body>
+</html>
