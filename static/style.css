@@ -601,12 +601,12 @@ section { padding: 40px 20px;
     color: #38bdf8;
 }
 .projects-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;         
-    overflow-x: auto;         
+    margin-left: 10px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));     
     gap: 30px;
-    padding: 40px 20px;
+    padding:20px;
     scroll-behavior: smooth;
 }
 .project-card {
@@ -694,13 +694,17 @@ section { padding: 40px 20px;
     font-size: 0.8rem;
     font-weight: bold;
 }
-
+.project-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .project-links a {
     display: inline-block;
     margin: 5px 10px;
     color: #fff;
     text-decoration: none;
-    padding: 8px 14px;
+    padding: 8px;
     border: 1px solid #00d9ff;
     border-radius: 5px;
     font-size: 0.85rem;
