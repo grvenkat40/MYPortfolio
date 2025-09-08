@@ -141,7 +141,7 @@ li{
 
 body{
 
-    background-image: url('images/background.jpg'); /* or your actual path */
+    background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.5), rgba(0, 0, 0, 0.5), rgba(26, 204, 151, 0.5)),url('images/black_bg.jpg'); /* or your actual path */
     background-size: cover;        /* makes image cover entire screen */
     background-repeat: no-repeat;  /* avoids tiling */
     background-position: center;   /* keeps image centered */
@@ -307,33 +307,34 @@ nav .right a:hover {
 .headshot img:hover {
     transform: scale(1.2);
 }
-section { padding: 40px 20px; 
-    background: white; 
+section { 
+    padding: 40px 20px; 
+    /* background: white;  */
     margin: 20px auto; 
     width: 88%; 
     box-shadow: 20 30 10px rgba(0, 0, 0, 0.1); 
     border-radius: 8px;
 }
 .hero{
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    position :relative;
+    /* background-image: url(images/background.jpg); */
+    /* background-size: cover; */
+    /* position :relative; */
     width: 100%; 
     height: 100vh;
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: center;
     color: #cbfce1;
 }
-.hero::after{
-    content: "";
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
+/* .hero::after{ */
+    /* content: ""; */
+    /* position: absolute; */
+    /* top:0; */
+    /* left:0; */
+    /* width: 100%;
+    height: 100%; */
+    /* background: rgba(0, 0, 0, 0.5); */
+/* } */
 .hero-content{
     position: relative;
     z-index: 2;
