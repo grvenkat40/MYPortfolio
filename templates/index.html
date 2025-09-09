@@ -11,7 +11,7 @@
 
     <header class="header">
         <div class="container">
-            <a class="logo" href="#about" style="font-family:LilitaOne;font-style: italic;">VENKAT</a>
+            <a class="logo" href="#hero" style="font-family:LilitaOne;font-style: italic;">VENKAT</a>
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#about" title="About Me" id="About Me" style="font-family:LilitaOne;font-size: large;">ABOUT</a></li>
@@ -24,7 +24,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
             <div class="headshot">
                 <picture>
@@ -48,7 +48,40 @@
         </div>
     </section>
         <section id="about">
-            <div class="about-text">
+            <h2>About</h2>
+            <hr>
+            <h3>Passionate about Data Science and Software Development</h3>
+            <div id="about_sec">
+                <div id="about_para">
+                    <p>I am Goondam Ramalingam Venkat, a final-year B.Tech student with a strong interest in data engineering , data science and software development.</p><br>
+                    <p>I enjoy working with Python, SQL, and big data tools, and I’ve built projects ranging from predictive analytics on electric vehicle sales to image classification applications using deep learning.
+                    </p><br>
+                    <p>
+                        <!-- My focus is on transforming data into meaningful insights and building efficient pipelines that support real-world applications. -->
+                        Alongside my technical skills, I’m continuously improving my problem-solving ability and communication skills to prepare for industry challenges.
+                    </p><br>
+                    <p>My goal is to leverage my analytical skills and technical expertise to contribute to impactful solutions in the field of data science and AI.</p>
+                </div>
+                <div id="tech_stack_grid">
+                    <div class="tech_grid">
+                        <h4>Data Science</h4><br>
+                        <p>Harnessing data to uncover insights, forecast outcomes, and support strategic decisions</p>
+                    </div>
+                    <div class="tech_grid">
+                        <h4>Machine learning</h4><br>
+                        <p>Developing predictive models and AI solutions for business optimization</p>
+                    </div>
+                    <div class="tech_grid">
+                        <h4>Web Development</h4><br>
+                        <p>Develop responsive and functional web applications with a focus on clean design and smooth user experience.</p>
+                    </div>
+                    <div class="tech_grid">
+                        <h4>Data Visualization</h4><br>
+                        <p>Creating compelling visual stories that drive data-driven decisions</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="about-text">
                 <h3>About Me</h3><br>
                 <hr><br>
                 <p class="short" style="font-weight:lighter;color: #cbfce1;"> Hii! I'm GOONDAM RAMALINGAM VENKAT passionate Data Engineering & Data Science enthusiast currently pursuing my B.Tech in Computer Science and Information Technology. </p></br></br></br>
@@ -56,10 +89,10 @@
                     My expertise lies in designing efficient data pipelines, transforming raw data into meaningful insights, and optimizing data workflows for scalable solutions. I am constantly expanding my knowledge in Cloud Computing, Workflow Orchestration, and Real-Time Data Processing, aiming to build robust and efficient data-driven systems.
                     I thrive on solving complex challenges, ensuring data integrity, and delivering optimized solutions that drive business success. My goal is to become a skilled Data Engineer, contributing to impactful projects in a consulting firm.
                     Let’s connect and build great things together!</p><br>
-                    <!-- <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">My Resume</a> -->
-                    <br><br>
-                <hr><br>
-                    <div class="connectio-links">
+                    <a href="Venkat_EngineeringResumes_5.pdf" download="Venkat Resume" class="DownloadResume">My Resume</a> -->
+                    <!-- <br><br> -->
+                <!-- <hr><br> -->
+            <!-- <div class="connectio-links">
                     <ul class="info" style="font-weight: bolder;">
                         <li id="connect1">PHONE NO</li>
                         <li id="connect1">Mail</li>
@@ -73,8 +106,8 @@
                     <br/><p class="more" style="font-weight: bolder;margin:-30px;color:rgb(255, 255, 255); "><a href="{{ url_for('about') }}">More About Me</p>
                     <br>
                 </div>
-            </div>
-            <div class="about-image">
+            </div> -->
+            <!-- <div class="about-image">
                 <img src="{{ url_for('static',filename='images/FormalVenkat.jpg') }}",alt="Venkat">
                 <div class="socials">
                     <p title="Venkat LinkedIn ID" style="margin-left: 100px;"><a href="https://www.linkedin.com/in/venkatgr/",id='linkedin'>
@@ -82,7 +115,7 @@
                     </a>
                     </p>
                 </div>
-            </div>
+            </div> -->
         </section>
 <!-- SKILLS -->
         <section class="skills" id="skills">
