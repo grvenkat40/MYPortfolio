@@ -18,6 +18,7 @@
                         <li><a href="#skills" title="SKILLS" id="Skills" style="font-family:LilitaOne;font-size: large">SKILLS</a></li>
                         <li><a href="#education-timeline" title="EDUCATION" id="Education" style="font-family:LilitaOne;font-size: large">EDUCATION</a></li>
                         <li><a href="#projects" title="PROJECTS" id="Project" style="font-family:LilitaOne;font-size: large">PROJECTS</a></li>
+                        <li><a href="#certificate" title="CERTIFICATION" id="certificates" style="font-family:LilitaOne;font-size: large">CERTIFICATIONS</a></li>
                         <li><a href="#Contact" title="CONTACT" id="Contact me" style="font-family:LilitaOne;font-size: large">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -80,6 +81,21 @@
                         <h4>Data Visualization</h4><br>
                         <p>Creating compelling visual stories that drive data-driven decisions</p>
                     </div>
+                </div>
+            </div> <br><br>
+            <!-- <hr style="width: 50%;"> -->
+            <div id="contact_ways">
+                <div id="connect-way">
+                    <h5>Phone</h5>
+                    <a href="tel:+919347467672">📞 +91 9347467672</a>
+                </div>
+                <div id="connect-way">
+                    <h5>Email</h5>
+                    <a href="mailto:grvenkat456@gmail.com?subject=Portfolio Contact">📩 grvenkat456@gmail.com</a>
+                </div>
+                <div id="connect-way">
+                    <h5>Location</h5>
+                    <a href="https://maps.app.goo.gl/9StdEaL2Jk1QxeA67" target="_blank">📍 Nagari, Andhra pradesh</a>
                 </div>
             </div>
         </section>
@@ -188,7 +204,7 @@
 
         <!-- Project 1 -->
         <div class="project-card">
-            <img src="{{ url_for('static',filename='images/portfolio-photo.png') }}" alt="Venkat Portfolio" class="project-image">
+            <img src="{{ url_for('static',filename='images/venkat_portfolio.png') }}" alt="Venkat Portfolio" class="project-image">
             <div class="project-overlay">
                 <h3>Personal Portfolio</h3>
                 <p>A dynamic and interactive personal portfolio.</p>
@@ -301,12 +317,69 @@
     </div>
 </section>
 
-
+<section class="certificates" id="certificate">
+    <h2>CERTIFICATIONS</h2>
+    <hr>
+    <div id="certificate-grid">
+        <div id="certify_card">
+            <div id="name_data">
+                <h4><strong>Python Programming Intern</strong></h4>
+                <h5> Aug 2024</h5>
+            </div>
+            <h5><strong> Ybi Foundation</strong></h5>
+            <p>During this internship, I gained strong hands-on experience with Python libraries such as Pandas and NumPy while working on various datasets.</p>
+            <div id="certify_skills">
+                <h6>Python</h6>
+                <h6>Pandas</h6>
+                <h6>NumPy</h6>
+            </div>
+            <a href="https://drive.google.com/file/d/1mKrDwkT-ytDfFrFDgpc2ZrPUBM7__2RR/view" target="_blank">Verify Certificate</a>
+        </div>
+        <div id="certify_card">
+            <div id="name_data">
+                <h4><strong>Data Visualization</strong> </h4>
+                <h5>Apr 2025</h5>
+            </div>
+            <h5><strong> Forage(TATA)</strong></h5>
+            <p>Completed a virtual experience program focused on creating insightful visualizations and dashboards to support business decision-making.</p>
+            <div id="certify_skills">
+                <h6>Python</h6>
+                <h6>Power BI</h6>
+                <h6>Presentaion</h6>
+            </div>
+            <a href="https://drive.google.com/file/d/1pR3Ioo-6TD0sGJCOChnqqoMvTwBoR1GB/view" target="_blank">Verify Certificate</a>
+        </div>
+        <div id="certify_card">
+            <div id="name_data">
+                <h4><strong>Data Science Intern</strong> </h4>
+                <h5>Apr-July 2025</h5>
+            </div>
+            <h5><strong> Unified Mentor</strong></h5>
+            <p>Worked on data preprocessing, analysis, and basic modeling techniques while applying data science concepts to practical case studies.</p>
+            <div id="certify_skills">
+                <h6>Scikit- Learn</h6>
+                <h6>ML</h6>
+                <h6>Pandas</h6>
+            </div>
+            <a href="https://drive.google.com/file/d/1CIpUrD9rsOdnwq9JlTQ9nfC1s6lr0_Hb/view" target="_blank">Verify Certificate</a>
+        </div>
+        <!-- <div id="certify_card">
+            <h4>Data Science Intern</h4>
+            <h5>Unified Mentor</h5>
+            <p>Worked on data preprocessing, analysis, and basic modeling techniques while applying data science concepts to practical case studies.</p>
+            <div id="certify_skills">
+                <h6>Scikit- Learn</h6>
+                <h6>Machine Leaning</h6>
+                <h6>Pandas</h6>
+            </div>
+            <a href="">Verify Certificate</a>
+        </div> -->
+    </div>
 </section>
 
 
 <section id="Contact">
-    <h2 style="text-align: center;color: #38bdf8;;">Connect Me</h2><br/>
+    <h2 style="text-align: center;color: #38bdf8;text-shadow:0 0 5px  aqua;">Send a Message</h2><br/>
     <hr><br>
     <form id="contact-form" action="/" method="POST">
         <label for="name">Your Full Name</label>

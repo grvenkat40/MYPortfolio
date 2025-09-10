@@ -1,45 +1,24 @@
-@font-face {
+/* @font-face {
     font-family: 'StephFont';
     src: url('fonts/steph-font.ttf') format('truetype');
-}                                                                                
-@font-face {
+}                                                                                 */
+/* @font-face {
     font-family: 'StephFontBold';
     src: url('fonts/steph-font-bold.ttf') format('truetype');
     font-weight: bold;
-}
+} */
 @font-face {
     font-family: 'LilitaOne';
     src: url('fonts/LilitaOne-Regular.ttf') format('truetype');
 }
-@font-face {
+/* @font-face {
     font-family: 'Lobster';
     src: url('fonts/Lobster-Regular.ttf') format('truetype');
-}
-@font-face {
+} */
+/* @font-face {
     font-family: 'AbrilFatface';
     src: url('fonts/AbrilFatface-Regular.ttf') format('truetype');
-}
-
-body {
-    font-family: 'StephFont', sans-serif; /* Default font */
-}
-
-p{
-    font-family: 'StephFontBold', sans-serif; /* Bold font */
-}
-.hey{
-    font-family: 'Lobster';
-}
-h1,h2,h3{
-    font-family:'AbrilFatface',sans-serif;
-
-}
-span{
-    font-family: 'LilitaOne',sans-serif;
-}
-li{
-    font-family: 'LilitaOne';
-}
+} */
 
 /* RESPONSIVE FIXES FOR SMALL SCREENS */
 @media (max-width: 768px) {
@@ -141,7 +120,7 @@ li{
 
 body{
 
-    background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.5), rgba(0, 0, 0, 0.5), rgba(26, 204, 151, 0.5)),url('images/black_bg.jpg'); /* or your actual path */
+    background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.5), rgba(0, 0, 0, 0.5), rgba(26, 204, 151, 0.5)),url('images/black_bg.jpg');
     background-size: cover;        /* makes image cover entire screen */
     background-repeat: no-repeat;  /* avoids tiling */
     background-position: center;   /* keeps image centered */
@@ -166,37 +145,6 @@ html {
     scroll-behavior:smooth;
     scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
 }
-/* nav {
-    background-color: #bfd6c4;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3.125rem;
-    height: 5rem;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(191, 214, 196, 0.9);
-    backdrop-filter: blur(5px);
-}
-nav .left a {
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-nav .right a {
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0.625rem;
-}
-
-nav .right a:hover {
-    color: var(--link-color);
-    transition: color 0.3s ease-in-out;
-}  */
 .header {
     /* background: linear-gradient(to right,#cbfce1,#d988ee,#cbfce1); */
     background: linear-gradient(90deg, #00C9FF, #92FE9D);
@@ -316,9 +264,10 @@ section {
     border-radius: 8px;
 }
 .hero{
+    /* background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.3), rgba(0, 0, 0, 0.3), rgba(26, 204, 151, 0.3)),url('images/black_bg.jpg'); */
     /* background-image: url(images/background.jpg); */
-    /* background-size: cover; */
-    /* position :relative; */
+    background-size: cover;
+    position :relative;
     width: 100%; 
     height: 100vh;
     display: flex;  
@@ -425,17 +374,19 @@ section {
     margin: auto;
     /* padding: 10px 10px; */
     /* background: radial-gradient(circle,#ffe4e1,#acdbd9); */
-    background-color: #273449;
+    /* background :radial-gradient(circle at top left, rgba(12, 161, 180, 0.3), rgba(255, 255, 255, 0.3), rgba(26, 204, 151, 0.3)); */
+    /* background-color: whitesmoke; */
     padding: 60px 20px;
-    border-right: 2px solid #38bdf8;
+    /* border-right: 2px solid #38bdf8;
     border-left: 2px solid #38bdf8;
     border-top: 2px solid rgb(255, 230, 7);
-    border-bottom: 2px solid rgb(255, 230, 7);
+    border-bottom: 2px solid rgb(255, 230, 7); */
 }
 #about h2{
     text-align: center;
     margin-bottom: 20px;
-    color: #38bdf8;
+    color: #00f7ff;
+    text-shadow: 0 0 5px rgb(63, 223, 235);
 }
 #about h3{
     text-align: center;
@@ -457,7 +408,8 @@ section {
 
 #about_para {
     flex: 1 1 300px;
-    color: rgba(209, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: bolder;
 
 }
 #tech_stack_grid {
@@ -468,7 +420,8 @@ section {
     row-gap: 10px; 
 }
 .tech_grid {
-  background: radial-gradient(circle at top left, rgb(245, 187, 81,0.60), rgb(231, 226, 226,0.55),rgb(124, 238, 241,0.60));
+  /* background: radial-gradient(circle at top left, rgb(245, 187, 81,0.80), rgb(231, 226, 226,0.55),rgb(124, 238, 241,0.80)); */
+    background: radial-gradient(circle at top left, rgb(124, 238, 241,0.40), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.70));
   padding: 15px;
   margin: 1px;
   width: 80%;
@@ -478,7 +431,7 @@ section {
 }
 .tech_grid:hover {
     transform: scale(1.02);
-    background: radial-gradient(circle at top left, rgb(245, 187, 81,0.80), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.80));
+    background: radial-gradient(circle at top left, rgb(245, 187, 81,0.90), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.90));
     
 }
 .tech_grid h4{
@@ -487,9 +440,6 @@ section {
     text-shadow: 0 0 2px rgb(0, 0, 0);
     transition: transform 0.3s ease-out;
 }
-/* .tech_grid h4:hover{
-    
-} */
 .tech_grid p{
     text-align: center;
     /* font-family: 'Poppins', sans-serif; */
@@ -497,6 +447,24 @@ section {
     font-style: italic;
     font-size: 14px;
 }
+#contact_ways{
+    display: flex;
+    justify-content: space-evenly;
+}
+#connect-way h5{
+    color: yellow;
+}
+#connect-way a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px white;
+    font-size: large;
+
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .filter-buttons {
@@ -508,21 +476,22 @@ section {
     .skills {
     width: 100%;
     padding: 60px 20px;
-    background-color: #1e293b;
+    /* background-color: #1e293b; */
     text-align: center;
-    border-right: 2px solid rgb(255, 230, 7);
-    border-left: 2px solid rgb(255, 230, 7);
-    border-top: 2px solid #38bdf8;
-    border-bottom: 2px solid #38bdf8;
+    /* border-right: 2px solid rgb(255, 230, 7);
+    border-left: 2px solid rgb(255, 230, 7); */
+    /* border-top: 2px solid #38bdf8;
+    border-bottom: 2px solid #38bdf8; */
     }
     .skills h3{
         color:rgb(255, 235, 55);
+        margin-bottom: 20px;
     }
     .skills h2 {
     font-size: 26px;
     color: #38bdf8;
     margin-bottom: 20px;
-    /* text-shadow: 0px 3px 8px #0cffeb; */
+    text-shadow: 0 0 5px rgb(63, 223, 235);
     }
 
     .skills-category {
@@ -571,14 +540,15 @@ section {
 }
 .projects{
     width: 100%;
-    background-color: #1e293b;
-    border-right: 2px solid rgb(255, 230, 7);
+    /* background-color: #1e293b; */
+    /* border-right: 2px solid rgb(255, 230, 7);
     border-left: 2px solid rgb(255, 230, 7);
     border-top: 2px solid #38bdf8;
-    border-bottom: 2px solid #38bdf8;
+    border-bottom: 2px solid #38bdf8; */
 }
 .projects h2{
     color: #38bdf8;
+    text-shadow: 0 0 5px rgb(63, 223, 235);
 }
 .projects-container {
     margin-left: 10px;
@@ -597,13 +567,13 @@ section {
     margin: 20px auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 2px 10px #00C9FF;
-    border-top: 2px solid #fbff10;
+    box-shadow: 0 0 5px #74f0d1;
+    /*border-top: 2px solid #fbff10;
     border-left: 3px solid #fbff10;
     border-bottom: 2px solid #fbff10;
-    border-right: 3px solid #fbff10;
+    border-right: 3px solid #fbff10; */
     transition: transform 0.4s ease;
-    flex: 0 0 auto;            /* Don’t grow or shrink, keep its natural width */
+    flex: 0 0 auto;      
     width: 300px;              
     height: 200px;
     /* rest of your styles… */
@@ -700,21 +670,22 @@ section {
 .education-timeline {
     width: 100%;
     padding: 50px 20px;
-    background: #1e293b;
-    border-right: 2px solid #38bdf8;
+    /* background: #1e293b; */
+    /* border-right: 2px solid #38bdf8;
     border-left: 2px solid #38bdf8;
     border-top: 2px solid rgb(255, 230, 7);
-    border-bottom: 2px solid rgb(255, 230, 7);
-    transition: transform 2s ease-in;
+    border-bottom: 2px solid rgb(255, 230, 7); */
+    transition: transform 0.3s ease-in;
 }
-.education-timeline .timeline-item:hover{
+/* .education-timeline .timeline-item:hover{
     transform: scale(1.03)translateY(20px);
-}
+} */
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
     color: #38bdf8;
+    text-shadow: 0 0 5px rgb(63, 223, 235);
 }
 
 .timeline {
@@ -756,16 +727,21 @@ section {
 
 .timeline-content {
     padding: 10px 20px;
-    background: whitesmoke;
+    background: radial-gradient(circle at top left, rgb(124, 238, 241,0.40), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.70));
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(126, 255, 5, 0.1);
     margin-left: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+.timeline-content:hover{
+    transform: scale(1.06) translateY(10px);
+    background: radial-gradient(circle at top right, rgb(124, 238, 241,0.60), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.60));
 }
 
 .timeline-content h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #2c3e50;
+    color: #0b0c0c;
 }
 .timeline-item #clg{
     font-family: 'Lobsterss';
@@ -774,20 +750,102 @@ section {
     font-family: 'LilitaOne';
     font-weight: lighter;
 }
+/* certificates */
+.certificates{
+    display: flex;
+    flex-direction: column;
+}
+.certificates h2{
+    color: #38bdf8;
+    text-align: center;
+    text-shadow: 0 0 5px aqua;
+    margin-bottom: 20px;
+}
+.certificates h2:active{
+    color: aqua;
+}
+#certificate-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+}
+#certify_card{
+    background: radial-gradient(circle at top left, rgb(124, 238, 241,0.40), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.70));
+    width: auto;
+    padding: 20px;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    box-shadow: 0 0 4px white;
+    transition: transform 0.3s ease-in-out;
+    transform: box-shadow 0.3s;
+}
+#certify_card:hover{
+    transform: scale(1.01) translateY(10px);
+    box-shadow: 0 0 4px white;
+}
+#name_data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+#name_data h5{
+    color: black;
+}
+#certify_card h5{
+    margin-bottom: 10px;
+}
+#certify_card p{
+    margin-bottom: 10px;
+}
+#certify_card a{
+    margin-top: 25px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    transition: background 0.3s ;
+}
+#certify_card a:hover{
+    background: #0cd1eb;   
+}
+#certify_skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+}
+#certify_skills h6{
+    padding: 5px;
+    background: #cfcccc;
+    box-shadow: 0 0 50px white;
+    border-radius: 25px;
+    width:fit-content;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+#certify_skills h6:hover{
+    transform: translateY(-5px);
+}
 
 
 /* Contact Section */
 #Contact {
     padding: 40px 20px;
-    /* background: radial-gradient(circle,#3fd4c7,#ffffff); */
-    background: #1e293b;
-    border-right: 2px solid #38bdf8;
+    background: radial-gradient(circle at top right,rgb(167, 238, 238,0.10),rgb(65, 62, 62,0.1),rgb(114, 218, 218,0.1));
+    /* background: #1e293b; */
+    /* border-right: 2px solid #38bdf8;
     border-left: 2px solid #38bdf8;
     border-top: 2px solid rgb(255, 230, 7);
-    border-bottom: 2px solid rgb(255, 230, 7);
+    border-bottom: 2px solid rgb(255, 230, 7); */
     margin: 20px auto;
     width: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(253, 251, 251, 1);
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
