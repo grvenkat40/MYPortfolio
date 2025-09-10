@@ -809,6 +809,7 @@ section {
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
+    background: #5dd3e2;  
     transition: background 0.3s ;
 }
 #certify_card a:hover{
