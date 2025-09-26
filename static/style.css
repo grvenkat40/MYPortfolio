@@ -274,7 +274,7 @@ section {
 .hero{
     /* background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.3), rgba(0, 0, 0, 0.3), rgba(26, 204, 151, 0.3)),url('images/black_bg.jpg'); */
     /* background-image: url(images/background.jpg); */
-    background-image:radial-gradient(circle at top left, rgba(12, 161, 180, 0.5), rgba(0, 0, 0, 0.5), rgba(26, 204, 151, 0.5)),url('images/black_bg.jpg');
+    background-image:radial-gradient(circle at top left, rgba(15, 183, 206, 0.904), rgba(49, 47, 47, 0.8), rgba(33, 221, 165, 0.8));
     background-size: cover;
     position :relative;
     width: 100%; 
