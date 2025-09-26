@@ -400,9 +400,10 @@ section {
 }
 #about h3{
     text-align: center;
+    font-style: oblique;
     margin: 20px;
     color:rgb(0, 0, 0);
-    text-shadow: 0 0 5px rgb(238, 255, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 #about_para p{
     font-size: 17px;
@@ -426,21 +427,28 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     margin-left: 30px;
-    column-gap: 1px;   
+    column-gap: 10px;   
     row-gap: 10px; 
 }
 .tech_grid {
-  /* background: radial-gradient(circle at top left, rgb(245, 187, 81,0.80), rgb(231, 226, 226,0.55),rgb(124, 238, 241,0.80)); */
-    background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253,0.6));  
-  padding: 15px;
-  margin: 1px;
-  width: 80%;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px white;
-  transition: transform 0.3s ease-in-out;
+    position: relative;
+    width:fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(207, 206, 206);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.tech_grid::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 10px;
+    background: linear-gradient(90deg, rgb(12, 247, 255,0.80), rgb(125, 255, 164,0.80));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .tech_grid:hover {
     transform: scale(1.02);
+    box-shadow: 0px 20px 40px rgb(70, 70, 70);
     background: radial-gradient(circle at top left, rgb(245, 187, 81,0.90), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.90));
     
 }
@@ -448,7 +456,10 @@ section {
     text-align: center;
     font-weight: bold;
     text-shadow: 0 0 2px rgb(0, 0, 0);
-    transition: transform 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.tech_grid:hover .tech_grid h4{
+    transform: scale(1.2);
 }
 .tech_grid p{
     text-align: center;
@@ -492,17 +503,28 @@ section {
     justify-content: space-evenly;
 }
 .skills-container {
-    background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253));  
+    position: relative;
+    background: radial-gradient(circle at top left, rgba(255, 253, 251, 0.1), rgba(17, 17, 17, 0.1));  
     border-radius: 16px;
     padding: 2rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border: 1px solid #050561;
     width: 320px;
     transition: all 0.3s ease-in-out;
 }
+.skills-container::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 10px;
+    background: linear-gradient(90deg, rgba(12, 255, 223, 0.8), rgba(21, 238, 173, 0.8));   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
 .skills-container:hover{
-    transform: scale(1.03);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6 );
+    transform: scale(1.02);
+    box-shadow: 0px 40px 60px rgb(65, 65, 65);
+    /* background: radial-gradient(circle at top left, rgb(245, 187, 81,0.90), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.90)); */
 
 }
 .skills-header {
@@ -553,7 +575,7 @@ section {
         }
 
 .skill-pill:hover {
-    background-color: #e8e8ed;
+    background-color: #6262dd;
     border-color: #c7c7cc;
 }
 
@@ -827,13 +849,8 @@ section {
 #certify_card{
     position: relative;
     /* background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253));   */
-
-    /* background: radial-gradient(circle at top left, rgb(124, 238, 241,0.40), rgb(231, 226, 226,0.50),rgb(124, 238, 241,0.70)); */
-    /* background: linear-gradient(90deg, rgb(12, 247, 255,0.50), rgb(125, 255, 164,0.50)); */
     width: auto;
     padding: 20px;
-    /* border-top: 10px solid; */
-    /* border-image: linear-gradient(90deg, rgb(12, 247, 255,0.80), rgb(125, 255, 164,0.80)) 1 ; */
     border-radius: 10px;
     box-shadow: 0 0 1px rgb(109, 109, 109);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
@@ -882,7 +899,8 @@ section {
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
-    background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253));  
+    /* background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253));   */
+    background: #7f7ff8;
     transition: background 0.3s ;
 }
 #certify_card a:hover{
@@ -956,7 +974,7 @@ section {
     display: flex;
     justify-content:center;
     margin-left: 33%;
-    background: radial-gradient(circle at top left, rgb(255, 168, 6,0.5), rgb(94, 235, 253));  
+    background: #7f7ff8;  
     align-content: center;
     color: rgb(0, 0, 0);
     border: 1px solid black;
